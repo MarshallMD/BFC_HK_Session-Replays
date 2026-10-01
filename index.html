@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<!-- BFC HK REPLAYS: EMBED VERSION (no header, no footer, event filter, black background). Deploy this file as index.html. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BFC in Hong Kong | Session Replays</title>
 <script>
-  // ?theme=light or ?theme=dark locks the look to match the host site; default follows the visitor's system setting
-  (function(){ try{ var t=new URLSearchParams(location.search).get("theme"); if(t==="light"||t==="dark") document.documentElement.setAttribute("data-theme",t); }catch(e){} })();
+  // Black (#000000) background by default to match the site container; ?theme=light switches to the white version
+  (function(){ try{ var t=new URLSearchParams(location.search).get("theme"); document.documentElement.setAttribute("data-theme", t==="light" ? "light" : "dark"); }catch(e){} })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
